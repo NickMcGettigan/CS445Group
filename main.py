@@ -38,7 +38,7 @@ model.compile(optimizer=sgd,
 # Train model and output history
 history = History()
 history = model.fit(train_set, train_labels_set, 
-            epochs=5, 
+            epochs=150, 
             verbose=1, 
             validation_data=(valid_set, valid_labels_set),
             callbacks=[history])
